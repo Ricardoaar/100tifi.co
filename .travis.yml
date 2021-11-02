@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  - '16.5.0'
+git:
+  depth: 3
+script:
+  - yarn build
+deploy:
+  provider: pages
+  edge: true
+  skin-cleanup: true
+  keep-history: true
+  github.token: $GITHUB_TOKEN
+  local-dir: dist/
+  target-branch: gh-pages
+  commit_message: "Deployed to Github Pages"
+  on:
+    branch: main
