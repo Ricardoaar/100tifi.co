@@ -3,7 +3,7 @@ function header() {
      <div class="header-main">
      <div class="logo">
         <h1>
-             <a href="/">
+             <a href="/100tifi.co">
              100tifi.co 
             </a>
         </h1>
